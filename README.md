@@ -146,7 +146,7 @@ The model demonstrated stable performance across folds, suggesting reasonable ge
 
 Feature importance was analyzed using Logistic Regression coefficients.
 
-![Feature Importance](images/feature_importance.png)
+![Feature Importance Graph](images/feature_importance.png)
 
 The most influential features included:
 
@@ -157,6 +157,12 @@ The most influential features included:
 * Thalassemia result (`thal`)
 
 These findings were broadly consistent with insights identified during exploratory data analysis.
+
+## Model Export
+
+The final tuned Logistic Regression model was exported using Joblib and stored in:
+`models/heart_disease_model.pkl`
+The model can be loaded and used for future predictions without retraining.
 
 ---
 
@@ -190,13 +196,6 @@ To move toward a production-ready workflow, the model could be:
 * Containerized with Docker
 * Tracked with MLflow
 * Integrated into a CI/CD pipeline
-
-## Model Export
-
-The final tuned Logistic Regression model was exported using Joblib and stored in:
-models/heart_disease_model.pkl
-The model can be loaded and used for future predictions without retraining.
-
 ---
 
 ## Technologies Used

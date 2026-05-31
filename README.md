@@ -146,8 +146,6 @@ The model demonstrated stable performance across folds, suggesting reasonable ge
 
 Feature importance was analyzed using Logistic Regression coefficients.
 
-## Feature Importance
-
 ![Feature Importance](images/feature_importance.png)
 
 The most influential features included:
@@ -186,18 +184,18 @@ Potential improvements:
 * Interaction features
 * Feature selection techniques
 
-## Model Export
-
-The final tuned Logistic Regression model was exported using Joblib and stored in:
-models/heart_disease_model.pkl
-The model can be loaded and used for future predictions without retraining.
-
 ### Production Deployment
 
 To move toward a production-ready workflow, the model could be:
 * Containerized with Docker
 * Tracked with MLflow
 * Integrated into a CI/CD pipeline
+
+## Model Export
+
+The final tuned Logistic Regression model was exported using Joblib and stored in:
+models/heart_disease_model.pkl
+The model can be loaded and used for future predictions without retraining.
 
 ---
 

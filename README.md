@@ -1,15 +1,3 @@
-<<<<<<< HEAD
-# Heart Disease Classification
-
-## Project Overview
-
-## Dataset
-
-## Exploratory Data Analysis
-
-## Models Evaluated
-
-## Hyperparameter Tuning
 # Heart Disease Classification
 
 Machine learning classification project predicting the presence of heart disease using clinical patient data.
@@ -229,8 +217,4 @@ heart-disease-classification/
 
 ## Author
 
-Eugene Anufriev, Senior Systems Reliability Engineer at Nutanix, AI ML, MLOps Enthusiast
-=======
-# heart-disease-classification
-Machine learning classification project predicting heart disease using Logistic Regression, Random Forest, and KNN with hyperparameter tuning and cross-validation.
->>>>>>> 03ab8789ad473c29e7d1b81f61011b90604d1f72
+Eugene Anufriev, Senior Systems Reliability Engineer at Nutanix, AI/ML, AI Infra and MLOps Enthusiast.

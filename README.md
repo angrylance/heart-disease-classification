@@ -66,6 +66,10 @@ The EDA phase focused on:
 * Correlation analysis
 * Identification of potentially informative predictors
 
+## Correlation Analysis
+
+![Correlation Heatmap](images/correlation_heatmap.png)
+
 Key observations:
 
 * Chest pain type (`cp`) showed a strong relationship with the target variable.
@@ -117,6 +121,14 @@ The final model was selected based on cross-validation performance.
 | F1 Score  | ~89%  |
 | ROC-AUC   | ~0.90 |
 
+## ROC Curve
+
+![ROC Curve](images/roc_curve.png)
+
+## Confusion Matrix
+
+![Confusion Matrix](images/confusion_matrix.png)
+
 ### Cross-Validated Performance
 
 | Metric    | Score |
@@ -133,6 +145,10 @@ The model demonstrated stable performance across folds, suggesting reasonable ge
 ## Feature Importance
 
 Feature importance was analyzed using Logistic Regression coefficients.
+
+## Feature Importance
+
+![Feature Importance](images/feature_importance.png)
 
 The most influential features included:
 
@@ -170,11 +186,15 @@ Potential improvements:
 * Interaction features
 * Feature selection techniques
 
+## Model Export
+
+The final tuned Logistic Regression model was exported using Joblib and stored in:
+models/heart_disease_model.pkl
+The model can be loaded and used for future predictions without retraining.
+
 ### Production Deployment
 
 To move toward a production-ready workflow, the model could be:
-
-* Saved using Joblib
 * Containerized with Docker
 * Tracked with MLflow
 * Integrated into a CI/CD pipeline
@@ -202,15 +222,20 @@ heart-disease-classification/
 │   └── heart-disease.csv
 │
 ├── images/
+│   ├── correlation_heatmap.png
+│   ├── roc_curve.png
+│   ├── confusion_matrix.png
+│   └── feature_importance.png
 │
 ├── models/
+│   └── heart_disease_model.pkl
 │
 ├── notebooks/
 │   └── heart_disease_classification.ipynb
 │
-├── .gitignore
 ├── README.md
-└── requirements.txt
+├── requirements.txt
+└── .gitignore
 ```
 
 ---
